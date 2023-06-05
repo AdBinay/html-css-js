@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .purple {
+        background-color: purple;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-rows: 150px 150px;
+        row-gap: 20px;
+        column-gap: 20px;
+        /* to center grid container */
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="red">red</div>
+      <div class="green">green</div>
+      <div class="blue">blue</div>
+      <div class="yellow">yellow</div>
+      <div class="orange">orange</div>
+      <div class="purple">purple</div>
+    </div>
+  </body>
+</html>

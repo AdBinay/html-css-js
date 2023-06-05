@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: red !important;
+        font-size: 20px;
+        font-weight: bolder;
+        font-style: italic;
+      }
+      p {
+        color: green;
+      }
+      #paragraph2 {
+        color: rgb(128, 0, 128);
+      }
+      .paragraph3 {
+        color: aqua;
+      }
+      div h2 {
+        color: azure;
+      }
+
+      /* applies styles for both id="paragraph2" and class="paragraph3" */
+      #paragraph2,
+      .paragraph3 {
+        font-size: larger;
+      }
+      .div1 {
+        background-color: orangered;
+        height: 200px;
+        /* width: 500px; */
+        max-width: 500px;
+        /* margin: 20px; */
+        margin-bottom: 20px;
+      }
+      .div2 {
+        height: 200px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: green;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <h2>Second Heading</h2>
+    </div>
+    <h1 style="color: blue">This is heading1</h1>
+    <p id="paragraph2">This is Paragraph 2</p>
+    <p class="paragraph3">This is Paragraph 3</p>
+    <p class="paragraph3">This is Paragraph 4</p>
+    <h2>Heading 2</h2>
+    <div class="div2">
+      <h1>Heading inside div 2</h1>
+    </div>
+  </body>
+</html>
